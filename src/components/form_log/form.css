@@ -1,0 +1,6 @@
+img.gbr-samping{
+    max-width:300px !important;
+    height:100% !important;
+    margin:0 !important;
+    object-fit: cover;
+}
