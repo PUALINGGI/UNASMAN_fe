@@ -4,11 +4,11 @@ import UserCtx from "../context/user.ctx";
 
 export default function Home(props) {
     const { isLogin } = useContext(UserCtx);
-    // if (!isLogin) {
-    //     return (
-    //         <Navigate to="/login" replace={true} />
-    //     )
-    // }
+    if (!isLogin) {
+        return (
+            <Navigate to="/login" replace={true} />
+        )
+    }
     return (
         <>
             <article className="prose">
