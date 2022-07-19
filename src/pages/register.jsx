@@ -62,7 +62,7 @@ export default function Register(props) {
                 {/* ---------------- JENKEL */}
                 <div className="form-control my-3 w-full max-w-full md:max-w-lg">
                     <label className="input-group">
-                        <span className={`font-semi-bold text-xs sm:text-sm ${decideSpanClass(namaValid)} `}>
+                        <span className={`font-semi-bold text-xs sm:text-sm ${decideSpanClass((jenkel && jenkel.length>0))} `}>
                             <FontAwesomeIcon className="m-0 sm:m-3" icon={solid("venus-mars")} />
                         </span>
                         <Select classStatus={decideStatusClass(jenkel && jenkel.length>0)}
@@ -73,7 +73,7 @@ export default function Register(props) {
                 {/* ----------------------- MAJOR */}
                 <div className="form-control my-3 w-full max-w-full md:max-w-lg">
                     <label className="input-group">
-                        <span className={`font-semi-bold text-xs sm:text-sm ${decideSpanClass(namaValid)} `}>
+                        <span className={`font-semi-bold text-xs sm:text-sm ${decideSpanClass(majorValid)} `}>
                             <FontAwesomeIcon className="m-0 sm:m-3" icon={solid("hotel")} />
                         </span>
                         <Input type="text"
@@ -89,7 +89,7 @@ export default function Register(props) {
                 {/* ----------------------- SEMESTER */}
                 <div className="form-control my-3 w-full max-w-full md:max-w-lg">
                     <label className="input-group">
-                        <span className={`font-semi-bold text-xs sm:text-sm ${decideSpanClass(namaValid)} `}>
+                        <span className={`font-semi-bold text-xs sm:text-sm ${decideSpanClass(semester<15 && semester>0)} `}>
                             <FontAwesomeIcon className="m-0 sm:m-3" icon={solid("list-check")} />
                         </span>
                         <Input type="number"
