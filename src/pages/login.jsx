@@ -79,5 +79,5 @@ function validasiNama(nama) {
 }
 function validasiNpm(npm) {
     if (npm.length < 1) { return null; }
-    return /^([0-9]{4,})([0-9]{3,})([0-9]{3,})*$/gi.test(npm);
+    return /^([0-9]{10,})$/gi.test(npm);
 }
