@@ -21,7 +21,7 @@ export default function Login(props) {
                 </div>
                 <div className="form-control my-3 w-full max-w-full md:max-w-lg">
                     <label className="input-group input-group-vertical rounded w-full max-w-full lg:max-w-lg">
-                        <span className={`py-3 font-semi-bold text-xs sm:text-sm ${decideSpanClass(namaValid)} `}>
+                        <span className={`pl-3 py-3 font-semi-bold text-xs sm:text-sm ${decideSpanClass(namaValid)} `}>
                             <FontAwesomeIcon className="mr-3" icon={solid("user")} />
                             Nama Lengkap :
                         </span>
