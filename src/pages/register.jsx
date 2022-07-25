@@ -60,7 +60,7 @@ export default function Register(props) {
                 <div className="form-control my-3 w-full max-w-full md:max-w-lg">
                     <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nama Lengkap :</label>
                     <label className="input-group">
-                        <span className={`justify-center items-center font-semi-bold text-xs sm:text-sm ${decideSpanClass(namaValid)} `}>
+                        <span className={`px-3 py-auto font-semi-bold text-xs sm:text-sm ${decideSpanClass(namaValid)} `}>
                             <FontAwesomeIcon className="m-auto sm:m-3" icon={solid("user-large")} />
                         </span>
                         <Input type="text" required
