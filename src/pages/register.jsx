@@ -61,7 +61,7 @@ export default function Register(props) {
                     <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nama Lengkap :</label>
                     <label className="input-group">
                         <span className={`px-3 flex-1 font-semi-bold text-xs sm:text-sm ${decideSpanClass(namaValid)} `}>
-                            <FontAwesomeIcon className="m-auto self-center sm:m-3" icon={solid("user-large")} />
+                            <FontAwesomeIcon className="self-center justify-self-center" icon={solid("user-large")} />
                         </span>
                         <Input type="text" required
                             placeholder="Nama Lengkap"
