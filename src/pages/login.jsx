@@ -36,7 +36,7 @@ export default function Login(props) {
                 </div>
                 <div className="form-control my-3 w-full max-w-full md:max-w-lg">
                     <label className="input-group input-group-vertical w-full max-w-full lg:max-w-lg">
-                        <span className={`py-3 font-semi-bold text-xs sm:text-sm ${decideSpanClass(npmValid)} `}>
+                        <span className={`pl-3 py-3 font-semi-bold text-xs sm:text-sm ${decideSpanClass(npmValid)} `}>
                             <FontAwesomeIcon className="mr-3" icon={solid("user-shield")} />
                             Nomor Pokok Mahasiswa :
                         </span>
