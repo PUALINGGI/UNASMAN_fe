@@ -63,7 +63,7 @@ export default function Register(props) {
                         <span className={`px-3 flex items-center justify-center font-semi-bold text-xs sm:text-sm ${decideSpanClass(namaValid)} `}>
                             <FontAwesomeIcon className="m-0 sm:m-3" icon={solid("user-large")} />
                         </span>
-                        <Input type="text" required
+                        <Input type="text" required={true}
                             placeholder="Nama Lengkap"
                             value={nama} name="nama"
                             classStatus={decideStatusClass(namaValid)}
@@ -88,7 +88,7 @@ export default function Register(props) {
                                 setNpmValid(validasiNpm(e.target.value));
                                 setNpm(e.target.value);
                             }} />
-                        <button className="btn btn-square" onClick={() => { setVision(!vision) }}>
+                        <button type="button" className="btn btn-square" onClick={() => { setVision(!vision) }}>
                             <FontAwesomeIcon icon={vision ? solid("eye-slash") : solid("eye")} className="m-3" />
                         </button>
                     </label>
@@ -249,7 +249,7 @@ function handleFile(source, target) {
 }
 
 function decideStatusClass(condition) {
-    if (condition === null | condition === undefined) { return "text-white" }
+    if (condition === null | condition === undefined) { return "text-gray-400" }
     return condition ? "text-success" : "text-error";
 }
 
