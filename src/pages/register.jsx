@@ -77,7 +77,7 @@ export default function Register(props) {
                 <div className="form-control my-3 w-full max-w-full md:max-w-lg">
                     <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">NPM :</label>
                     <label className="input-group">
-                        <span className={`font-semi-bold text-xs sm:text-sm ${decideSpanClass(npmValid)} `}>
+                        <span className={`px-3 flex items-center justify-center font-semi-bold text-xs sm:text-sm ${decideSpanClass(npmValid)} `}>
                             <FontAwesomeIcon className="m-0 sm:m-3" icon={solid("user-shield")} />
                         </span>
                         <Input type={vision ? "text" : "password"}
@@ -97,7 +97,7 @@ export default function Register(props) {
                 <div className="form-control my-3 w-full max-w-full md:max-w-lg">
                     <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Jenis Kelamin :</label>
                     <label className="input-group">
-                        <span className={`font-semi-bold text-xs sm:text-sm ${decideSpanClass((jenkel && jenkel.length > 0))} `}>
+                        <span className={`px-3 flex items-center justify-center font-semi-bold text-xs sm:text-sm ${decideSpanClass((jenkel && jenkel.length > 0))} `}>
                             <FontAwesomeIcon className="m-0 sm:m-3" icon={solid("venus-mars")} />
                         </span>
                         <Select classStatus={decideStatusClass(jenkel && jenkel.length > 0)}
@@ -109,7 +109,7 @@ export default function Register(props) {
                 <div className="form-control my-3 w-full max-w-full md:max-w-lg">
                     <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Jurusan :</label>
                     <label className="input-group">
-                        <span className={`font-semi-bold text-xs sm:text-sm ${decideSpanClass(majorValid)} `}>
+                        <span className={`px-3 flex items-center justify-center font-semi-bold text-xs sm:text-sm ${decideSpanClass(majorValid)} `}>
                             <FontAwesomeIcon className="m-0 sm:m-3" icon={solid("hotel")} />
                         </span>
                         <Input type="text"
@@ -126,7 +126,7 @@ export default function Register(props) {
                 <div className="form-control my-3 w-full max-w-full md:max-w-lg">
                     <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Semester :</label>
                     <label className="input-group">
-                        <span className={`font-semi-bold text-xs sm:text-sm ${decideSpanClass(smsValid)} `}>
+                        <span className={`px-3 flex items-center justify-center font-semi-bold text-xs sm:text-sm ${decideSpanClass(smsValid)} `}>
                             <FontAwesomeIcon className="m-0 sm:m-3" icon={solid("list-check")} />
                         </span>
                         <Input type="number"
@@ -144,7 +144,7 @@ export default function Register(props) {
                 <div className="form-control my-3 w-full max-w-full md:max-w-lg">
                     <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">E-Mail :</label>
                     <label className="input-group">
-                        <span className={`font-semi-bold text-xs sm:text-sm ${decideSpanClass(mailValid)} `}>
+                        <span className={`px-3 flex items-center justify-center font-semi-bold text-xs sm:text-sm ${decideSpanClass(mailValid)} `}>
                             <FontAwesomeIcon className="m-0 sm:m-3" icon={solid("envelope")} />
                         </span>
                         <Input type="email"
@@ -161,7 +161,7 @@ export default function Register(props) {
                 <div className="form-control my-3 w-full max-w-full md:max-w-lg">
                     <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nomor HP/WA :</label>
                     <label className="input-group">
-                        <span className={`font-semi-bold text-xs sm:text-sm ${decideSpanClass(hpValid)} `}>
+                        <span className={`px-3 flex items-center justify-center font-semi-bold text-xs sm:text-sm ${decideSpanClass(hpValid)} `}>
                             <FontAwesomeIcon className="m-0 sm:m-3" icon={solid("phone")} />
                         </span>
                         <Input type="text"
